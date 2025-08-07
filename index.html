@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalvan S. Cuyopan - Personal Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto+Mono:wght@400&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+            background: url('anime_background.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            backdrop-filter: brightness(0.8);
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 2px 2px 6px #ff007f, -2px -2px 6px #00eaff;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-size: 1.2em;
+            line-height: 1.5;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .links a {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            text-shadow: 1px 1px 3px black;
+            transition: all 0.3s ease;
+            background: rgba(0,0,0,0.4);
+        }
+
+        .links a:hover {
+            background: #ff007f;
+            border-color: #ff007f;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #ff007f;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 2px 2px 6px #ff007f, -2px -2px 6px #00eaff; }
+            to { text-shadow: 2px 2px 20px #ff007f, -2px -2px 20px #00eaff; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Personal Website</h1>
+    <p>Hello! I’m Kalvan S. Cuyopan, a criminology student with a passion for sports, leadership, and continuous growth. Explore my world below.</p>
+    
+    <div class="links">
+        <a href="about.html">About Me</a>
+        <a href="blog.html">My Hobbies</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</body>
+</html>

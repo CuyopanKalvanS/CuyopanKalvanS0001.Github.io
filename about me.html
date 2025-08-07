@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .gallery figure {
+      margin: 0;
+    }
+    .gallery img {
+      max-width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .section-heading {
+      margin-top: 40px;
+      font-size: 1.5em;
+      color: #333;
+    }
+    /* Back button styling */
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      position: relative;
+    }
+    .back-btn::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%) rotate(135deg);
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ROTC Pictures Section -->
+  <h2 class="section-heading">This is my past picture</h2>
+  <div class="gallery">
+    <figure><img src="rotc.jpg" alt="ROTC Picture 1"><figcaption>rotc.jpg</figcaption></figure>
+    <figure><img src="rotc2.jpg" alt="ROTC Picture 2"><figcaption>rotc2.jpg</figcaption></figure>
+    <figure><img src="rotc3.jpg" alt="ROTC Picture 3"><figcaption>rotc3.jpg</figcaption></figure>
+  </div>
+
+  <!-- Work Experience Pictures Section -->
+  <h2 class="section-heading">This is my Work Experience</h2>
+  <div class="gallery">
+    <figure><img src="work.jpg" alt="Work Experience Picture 1"><figcaption>work.jpg</figcaption></figure>
+    <figure><img src="work2.jpg" alt="Work Experience Picture 2"><figcaption>work2.jpg</figcaption></figure>
+  </div>
+
+  <!-- Back Button with Red Box and Arrow -->
+  <a href="#" class="back-btn">Back</a>
+
+</body>
+</html>
